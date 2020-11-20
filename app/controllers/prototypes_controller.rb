@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-before_action :authenticate_user!, only: [:show]
+before_action :authenticate_user!, only: [:update, :edit]
 # before_action :move_to_index, except: [:index]
   def index #index.html.erbへ #config/routes.rbからの指示
    @prototypes = Prototype.all
